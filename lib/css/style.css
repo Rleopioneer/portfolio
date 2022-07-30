@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+body .container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header_logo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.header .container .navbar {
+  padding: 15vh 0;
+  position: absolute;
+  position: absolute;
+  transform: translate(-50%, -70%);
+  top: 30%;
+  left: 50%;
+}
+.header .container .navbar .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.header .container .navbar .menu li {
+  padding: 1em;
+  margin: 1em;
+  list-style: none;
+  transition: ease-in-out 500ms;
+}
+.header .container .navbar .menu li:hover {
+  background-color: rgba(19, 19, 19, 0.2196078431);
+  background-color: rgba(19, 19, 19, 0.7333333333);
+  border-radius: 10px;
+}
+.header .container .navbar .menu li:hover a {
+  text-decoration: underline;
+  color: rgb(240, 164, 0);
+}
+.header .container .navbar .menu li a {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #e6e4e4;
+  font-size: 1.1rem;
+}
+
+.about {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+.about .container {
+  display: flex;
+  position: relative;
+  padding-top: 5em;
+}
+.about .container .text {
+  width: 40vw;
+  font-weight: bold;
+  margin-right: 5em;
+  overflow: hidden;
+  display: block;
+}
+.about .container .avatar {
+  display: flex;
+  align-items: center;
+}
+.about .container .avatar img {
+  width: 500px;
+}
+
+.gallery {
+  background-color: greenyellow;
+  height: 100vh;
+}
+
+.contact {
+  background-color: #000;
+  height: 100vh;
+}
+
+.footer {
+  background-color: darkgrey;
+  height: 15vh;
+}/*# sourceMappingURL=style.css.map */
