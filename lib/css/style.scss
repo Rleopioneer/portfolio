@@ -1,3 +1,6 @@
+@import '../bootstrap/scss/bootstrap.scss';
+@import '../bootstrap/scss/functions';
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +12,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 
-    .container {
-        width: 80vw;
-        margin: 0 auto;
-    }
 }
 
 .header {
@@ -29,9 +28,8 @@ body {
 
             padding: 15vh 0;
             position: absolute;
-            position: absolute;
-            transform: translate(-50%, -70%);
-            top: 30%;
+            transform: translate(-50%, -50%);
+            top: 50%;
             left: 50%;
             
             .menu {
@@ -46,15 +44,11 @@ body {
                     list-style: none;
                     transition: ease-in-out 500ms;
 
-                    &:hover {
-                        background-color: #13131338; 
-                        background-color: #131313bb;
-                        border-radius: 10px;
-                    }
+                    
 
-                    &:hover a {
+                    &:hover span {
                         text-decoration: underline;
-                        color: rgb(240, 164, 0);
+                        color: $yellow;
                     }
 
                     a {
@@ -76,35 +70,7 @@ body {
 .about {
     background-color: whitesmoke;
     height: 100vh;
-    
-
-    .container {
-        display: flex;
-        position: relative;
-        padding-top: 5em;
         
-        .text {
-            
-            width: 40vw;
-            font-weight: bold;
-            margin-right: 5em;
-            overflow: hidden;
-            display: block;
-    
-        }
-
-        .avatar {
-            display: flex;
-            align-items: center;
-
-            img {
-                width: 500px;
-            }
-        }
-    }    
-
-
-    
 }
 
 .gallery {
